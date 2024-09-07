@@ -45,16 +45,15 @@
 </template>
 
 <script>
-
 // 引入组件
 import vueDanmaku from 'vue-danmaku'
+import axios from 'axios'
 
 export default {
   components: { vueDanmaku },
   data() {
-        return {
-            // 弹幕列表(图片资源可能随时失效，如失效请自行更换)
-            list: [
+    return {
+      list: [
             { text: '每一件展品都在诉说历史的伟大与艰辛。' },
             { text: '革命先烈的牺牲，换来了今日的和平。' },
             { text: '历史的长河奔流不息，我们应时刻铭记。' },
@@ -74,81 +73,74 @@ export default {
             { text: '革命精神，激励我们在新时代中砥砺前行。' },
 
           ],
-            newtext:'',
-            // 弹幕配置
-            config: {
-                speeds: 100,//弹幕速度
-                randomChannel: true,//随机选择轨道插入
-                isSuspend: true,//是否开启弹幕悬停(PC是鼠标悬停，移动端是点击悬停)
-                loop: true,//是否开启循环播放
-                useSlot: true,//是否开启弹幕插槽(自定义样式时开启)
-                channels: 11,//轨道数量
-                top: 15,//弹幕垂直间距(px)
-                right: 15,//弹幕水平间距(px)
-                // ...
-                // 更多参数详见文章底部
-            },
-        }
-    },
-
-    methods: {
-
-      
-
-      /**
-       * 点击发送弹幕
-       * @description 插入到节点中
-       * @param {String} text - 弹幕内容
-       * @return void
-       */
-      sendPush(text) {
-        // 注意：不适用于频繁插入，详情请看文档
-        const handletext = text
-        console.log(handletext);
-        
-        this.list.push(handletext)
-        console.log(this.list);
-        
-        this.$refs.Danmaku.insert({
-          // 图片
-          // 插入的内容
-          text: text,
-          // 额外插入一个字段，用于高亮显示
-          // 模板进行判断,增加额外样式
-          flag: 'my'
-        })
-        this.newtext = ''
+      newtext: '',
+      config: {
+        speeds: 100,
+        randomChannel: true,
+        isSuspend: true,
+        loop: true,
+        useSlot: true,
+        channels: 11,
+        top: 15,
+        right: 15,
       },
-
-      /**
-       * 点击弹幕
-       * @description 执行操作
-       * @param {Object} row - 行数据
-       * @param {Number} index - 索引
-       * @retrun void
-       */
-      action(row, index) {
-          console.log(row, index)
-      },
-
-      /**
-       * 监听弹幕滚动完毕
-       * @description 如果开启loop循环播放,永不执行(如果关闭,则弹幕滚动完后触发)
-       * @param {Number} index - 最后一个弹幕的下标
-       * @return void
-       */
-      getEnd(index) {
-          console.log('滚动结束', index)
-      },
-
     }
-
+  },
+  mounted() {
+    this.fetchComments();
+  },
+  methods: {
+    /**
+     * 请求评论数据
+     * @return void
+     */
+    fetchComments() {
+      const url = 'https://comments.soooo.fun/api/comment?path=/&pageSize=10&page=1&lang=zh-CN&sortBy=insertedAt_desc';
+      axios.get(url)
+        .then(response => {
+          const data = response.data.data.data;
+          data.forEach(item => {
+            const { nick, orig } = item;
+            const regex = /^(?!.*[<>(){}*&$#/\\@]).*$/;
+            if (regex.test(orig)) {
+              const combinedText = `${nick}: ${orig}`;
+              this.list.push({ text: combinedText });
+              this.$refs.Danmaku.insert({
+                text: combinedText,
+                flag: 'my'
+              });
+            }
+          });
+        })
+        .catch(error => {
+          console.error('Error fetching comments:', error);
+        });
+    },
+    sendPush(text) {
+      const handletext = text;
+      console.log(handletext);
+      this.list.push({ text: handletext });
+      console.log(this.list);
+      this.$refs.Danmaku.insert({
+        text: text,
+        flag: 'my'
+      });
+      this.newtext = '';
+    },
+    action(row, index) {
+      console.log(row, index);
+    },
+    getEnd(index) {
+      console.log('滚动结束', index);
+    },
+  }
 }
 </script>
 
+
 <style scoped>
 .background-section {
-  background-image: url('../assets/images/九一八纪念馆2.png');
+  background-image: url('../assets/images/CUMT-view3.jpg');
   background-size: cover;
   background-position: center;
 }

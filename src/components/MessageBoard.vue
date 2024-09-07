@@ -3,94 +3,38 @@
     <div class="heading">心得体会</div>
     <hr class="heading-hr" />
 
-    <div class="form">
-      <input v-model="username" type="text" placeholder="用户名" />
-      <textarea v-model="message" placeholder="留言内容"></textarea>
-      <button @click="submitMessage" class="btn">我有好多想说的</button>
+    <div id="article-info">
+    <!-- ... -->
+    阅读量: <span class="waline-pageview-count" data-path="https://cche0214.soooo.fun" />
+    <!-- ... -->
     </div>
 
-    <div id="messageBoard">
-      <div v-for="(msg, index) in messages" :key="index" class="message">
-        <div class="message-info">
-          <div class="info">
-            <img :src="require(`@/assets/images/${msg.avatar}`)" alt="头像" />
-            <strong class="name">{{ msg.username }}</strong>
-          </div>
-          <span>发布于：{{ msg.timestamp }}</span>
-        </div>
-        <div class="content">
-          {{ msg.message }}
-        </div>
-      </div>
-    </div>
+    <div id="waline"></div>
+    <script type="module">
+      import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+      init({
+        el: '#waline',
+        serverURL: 'https://comments.soooo.fun',
+        pageview: true,
+      });
+    </script>
     
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      username: '',
-      message: '',
-      messages: [
-        {
-          username: '蒋云辉',
-          message: '实践真好玩',
-          avatar: '计院logo.png',
-          timestamp: '2024/08/21 12:00:00'
-        },
-        {
-          username: '陈岳豪',
-          message: '实践真有意思',
-          avatar: '计院logo.png',
-          timestamp: '2024/08/21 12:05:00'
-        },
-        {
-          username: '孙浩冉',
-          message: '下次还来',
-          avatar: '计院logo.png',
-          timestamp: '2024/08/21 12:10:00'
-        }
-      ]
-    };
-  },
-  methods: {
-    submitMessage() {
-      if (this.message.trim() === '') {
-        alert('请输入内容');
-        return;
-      }
-
-      const user = this.username.trim() === '' ? '匿名' : this.username;
-      const timestamp = this.getCurrentTime();
-      const defaultAvatar = 'mouse.jpg'; // 默认头像文件名
-
-      // 将新留言添加到 messages 数组
-      this.messages.unshift({
-        username: user,
-        message: this.message,
-        avatar: defaultAvatar,
-        timestamp
-      });
-
-      // 清空输入框
-      this.username = '';
-      this.message = '';
-    },
-    getCurrentTime() {
-      const now = new Date();
-      const year = now.getFullYear();
-      const month = ('0' + (now.getMonth() + 1)).slice(-2);
-      const day = ('0' + now.getDate()).slice(-2);
-      const hours = ('0' + now.getHours()).slice(-2);
-      const minutes = ('0' + now.getMinutes()).slice(-2);
-      const seconds = ('0' + now.getSeconds()).slice(-2);
-      return `${year}/${month}/${day} ${hours}:${minutes}:${seconds}`;
-    }
+  mounted() {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://unpkg.com/@waline/client@v3/dist/waline.css';
+    document.head.appendChild(link);
   }
-};
+}
 </script>
+
+
 
 <style scoped>
 
