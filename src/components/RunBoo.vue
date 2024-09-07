@@ -24,11 +24,11 @@ export default {
     return {
       currentIndex: 0,
       images: [
-        require('@/assets/images/CUMT-view1.jpg'),
-        require('@/assets/images/CUMT-view2.jpg'),
-        require('@/assets/images/CUMT-view3.jpg'),
-        require('@/assets/images/CUMT-view4.jpg'),
-        require('@/assets/images/CUMT-view1.jpg')
+        require('@/assets/images/合照1.jpg'),
+        require('@/assets/images/第一师范纪念馆1.png'),
+        require('@/assets/images/C淮海2.png'),
+        require('@/assets/images/九一八纪念馆2.png'),
+        require('@/assets/images/杨虎城旧址封面.png')
       ],
       timer: null
     };

@@ -24,7 +24,7 @@ export default {
   data() {
     return {
       tableData: [], // 用于存放JSON数据
-      selectedLocation: { address: '默认地址', people: '默认的人' }, // 存储选中地点的信息
+      selectedLocation: { address: ' ', people: ' ' }, // 存储选中地点的信息
       mapInstance: null, // 存储地图实例
       initialOption: null // 存储初始配置
     };

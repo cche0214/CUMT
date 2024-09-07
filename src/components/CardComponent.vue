@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h1 class="heading">实践团主要成员（两个/三个）</h1>
+      <h1 class="heading">E新向党实践团·带队教师与队长</h1>
       <hr class="heading-hr">
   
       <div v-for="(member, index) in members" :key="index" class="business-card-container">
@@ -35,30 +35,44 @@
       return {
         members: [
           {
-            name: '姓名',
-            role: '负责职务',
-            description: '负责工作介绍',
-            tel: '13823279532',
-            qq: '3106201882',
-            email: '08232716@cumt.edu.cn',
-            introduction: '（个人简介）中国矿业大学是教育部直属的全国重点高校，是教育部、应急管理部与江苏省人民政府共建高校，先后进入国家“211工程”“985优势学科创新平台项目”和国家“双一流”建设高校行列。学校为全国首批具有博士和硕士授予权的高校之一，设有国家批准的研究生院。学校现坐落于素有“五省通衢”之称的国家历史文化名城——江苏省徐州市，有文昌和南湖两个校园，占地4200余亩，校舍建筑面积156万平方米，馆藏图书文献2000多万册（件）。',
-            image: 'mouse.jpg',
-            telLink: 'https://www.cumt.edu.cn/',
-            qqLink: 'https://www.cumt.edu.cn/',
-            emailLink: 'https://www.cumt.edu.cn/',
+            name: '曹露晨',
+            role: 'E新向党实践团指导教师',
+            description: '',
+            tel: '0516-83591715',
+            qq: ' ',
+            email: ' ',
+            introduction: '单位：中国矿业大学计算机科学与技术学院 职称：讲师 职务：辅导员',
+            image: '计院logo.png',
           },
           {
-            name: '姓名',
-            role: '负责职务',
-            description: '负责工作介绍',
-            tel: '13823279532',
-            qq: '3106201882',
-            email: '08232716@cumt.edu.cn',
-            introduction: '（个人简介）中国矿业大学是教育部直属的全国重点高校，是教育部、应急管理部与江苏省人民政府共建高校，先后进入国家“211工程”“985优势学科创新平台项目”和国家“双一流”建设高校行列。学校为全国首批具有博士和硕士授予权的高校之一，设有国家批准的研究生院。学校现坐落于素有“五省通衢”之称的国家历史文化名城——江苏省徐州市，有文昌和南湖两个校园，占地4200余亩，校舍建筑面积156万平方米，馆藏图书文献2000多万册（件）。',
-            image: 'mouse.jpg',
-            telLink: 'https://www.cumt.edu.cn/',
-            qqLink: 'https://www.cumt.edu.cn/',
-            emailLink: 'https://www.cumt.edu.cn/',
+            name: '张铭昊',
+            role: 'E新向党实践团队长',
+            description: '总体把控与协调规划成员各项实践，确保安全与质量。',
+            tel: '15665160053',
+            qq: '1872663290',
+            email: '1872663290@qq.com',
+            introduction: '张铭昊，男，共青团员，辽宁丹东人。自2019年起参与各类社会实践活动，并在2023-2024期间参与负责中国矿业大学计算机学院团委社会实践工作，于2023、2024暑期社会实践中带领计算机学院红色攻城狮实践团进行一系列实践，获得较好成果，获中国矿业大学2023暑期社会实践先进个人、中国矿业大学2023暑期社会实践调研报告优秀作者等一系列荣誉。',
+            image: '张铭昊头像.jpg',
+          },
+          {
+            name: '杨晓迪',
+            role: 'E新向党实践团副队长',
+            description: '负责实践过程把控与实践团网页开发的协调督促。',
+            tel: '16678171812',
+            qq: '3481503921',
+            email: '3481503921@qq.com',
+            introduction: '杨晓迪，女，中共预备党员，山东莘县人。现任中国矿业大学计算机科学与技术学院团委副书记兼团学办公室主任，参加国家级大创一项，主持省级大创一项，参加挑战杯揭榜挂帅一项，曾获国家励志奖学金，校级荣誉两项，院级荣誉若干。',
+            image: '杨晓迪头像.jpg',
+          },
+          {
+            name: '罗瑞清',
+            role: '文稿资料组组长',
+            description: '统筹新闻撰写与投稿、产出高质量新闻。',
+            tel: '15348649494',
+            qq: '3575816928',
+            email: '3575816928@qq.com',
+            introduction: '罗瑞清，男，19岁，共青团员，主要负责统筹新闻撰写组与新闻投稿组梳理红色故事主线、明确红色文化内核，结合线下采集资料生成图文并茂的宣讲故事，并紧跟实践小组动态实时产出对应新闻，在对新闻质量进行评估后，投稿到相应层次网站。',
+            image: '罗瑞清头像.jpg',
           },
           // Add more members here as needed
         ]
@@ -140,7 +154,7 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        background: url("../assets/images/CUMT-view1.jpg");
+        background: url("../assets/images/CUMT-view2.jpg");
         background-size: cover;
         z-index: -1;
         transform: skewY(-3deg);
@@ -151,7 +165,18 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        background: url("../assets/images/CUMT-view1.jpg");
+        background: url("../assets/images/CUMT-view3.jpg");
+        background-size: cover;
+        z-index: -1;
+        transform: skewY(-3deg);
+        transform-origin: 0 0;
+}
+.business-card-container:nth-of-type(4) .head::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: url("../assets/images/CUMT-view2.jpg");
         background-size: cover;
         z-index: -1;
         transform: skewY(-3deg);

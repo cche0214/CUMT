@@ -19,56 +19,47 @@
 export default {
   data() {
     return {
-      introductionText: "每一年用一句话概括实践团所进行的实践，图片就是当年的合照图片，例如2024年，e新向党……",
+      introductionText: "重走历史足迹，E新向党实践团的实践地点遍布全国各地",
       historyItems: [
         {
           year: "2024",
-          image: "CUMT-view1.jpg",
-          intro: "2023年矿大迎来了新一轮的学术发展......",
-          link: "https://www.cumt.edu.cn/#"
+          image: "合照1.jpg",
+          intro: "2024年，E新向党实践团开始了新一轮的暑期实践",
         },
         {
           year: "2023",
-          image: "CUMT-view2.jpg",
-          intro: "2023年矿大迎来了新一轮的学术发展......",
-          link: "https://www.cumt.edu.cn/#"
+          image: "历史足迹1.png",
+          intro: "2023年，E新向党实践团围绕“红色安全”和“红色电波”主题，深入学习革命历史，传承红色精神。",
         },
         {
           year: "2022",
-          image: "CUMT-view3.jpg",
-          intro: "2022年矿大开展了多项科研项目......",
-          link: "https://www.cumt.edu.cn/#"
+          image: "历史足迹2.png",
+          intro: "2022年，由于疫情，E新向党实践团再次返家乡分散进行，以红色家书为主题，传承革命先烈的信念。",
         },
         {
           year: "2021",
-          image: "CUMT-view4.jpg",
-          intro: "2021年矿大学生在全国竞赛中取得佳绩......",
-          link: "https://www.cumt.edu.cn/#"
+          image: "历史足迹3.png",
+          intro: "2021年，E新向党实践团前往上海，结合当时的热点《觉醒年代》，学习《新青年》创办的历史背景与精神。",
         },
         {
           year: "2020",
-          image: "CUMT-view2.jpg",
-          intro: "2020年矿大迎来了建校110周年......",
+          image: "历史足迹4.png",
+          intro: "2020年，受疫情影响，E新向党实践团返家乡分散开展活动，其中部分成员前往江西南昌，学习红色文化。",
           link: "https://www.cumt.edu.cn/#"
         },
         {
           year: "2019",
-          image: "CUMT-view1.jpg",
-          intro: "2019年矿大在科研领域取得重大突破......",
+          image: "历史足迹5.png",
+          intro: "2019年，E新向党实践团前往开山岛，致敬守岛人，感悟坚守奉献的精神。",
           link: "https://www.cumt.edu.cn/#"
         },
         {
           year: "2018",
-          image: "CUMT-view3.jpg",
-          intro: "2018年矿大新增了多个本科专业......",
+          image: "历史足迹6.jpg",
+          intro: "2018年，E新向党实践团前往延安梁家河，队名为“平凡之路”，结合七年知青岁月，深入学习革命精神。",
           link: "https://www.cumt.edu.cn/#"
         },
-        {
-          year: "2019",
-          image: "CUMT-view4.jpg",
-          intro: "2019年矿大在科研领域取得重大突破......",
-          link: "https://www.cumt.edu.cn/#"
-        },
+        
       ]
     };
   },
@@ -80,7 +71,7 @@ export default {
       this.introductionText = intro;
     },
     resetText() {
-      this.introductionText = "每一年用一句话概括实践团所进行的实践，图片就是当年的合照图片，例如2024年，e新向党……";
+      this.introductionText = "重走历史足迹，E新向党实践团的实践地点遍布全国各地";
     }
   }
 };

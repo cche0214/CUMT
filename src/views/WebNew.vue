@@ -1,7 +1,7 @@
 <template>
   <div class="body">
     <div class="container">
-        <div class="heading">实践新闻 如果可以的话发一个个打包好的，里面就是视频+图片+文字稿的形式即可</div>
+        <div class="heading">实践新闻</div>
         <hr class="heading-hr" />
         <DetailCardNew></DetailCardNew>
     </div>

@@ -1,6 +1,6 @@
 <template>
   <div class="team-heart">
-    <div class="heading">团队初心 可以用四字词语简要概括初心，两边放可以体现初心的事件，图片</div>
+    <div class="heading">团队初心</div>
     <hr class="heading-hr" />
     <div class="wrap">
       <div class="boxheart" v-for="(item, index) in boxes" :key="index">
@@ -35,23 +35,23 @@ export default {
       boxes: [
         {
           centerText: '服务社会',
-          leftImage: 'CUMT-view1.jpg',
+          leftImage: '第一师范纪念馆2.png',
           leftText: '',
-          rightText: '中国矿业大学是教育部直属的全国重点高校，是教育部、应急管理部与江苏省人民政府共建高校，先后进入国家“211工程”“985优势学科创新平台项目”和国家“双一流”建设高校行列。',
+          rightText: 'E新向党实践团始终秉持助人为乐的精神，走进社区、农村等地，帮助有需要的人群。通过行动传递爱与温暖，团员们用心服务他人，以真诚与善良温暖社会，展示当代大学生的责任与担当。',
           rightImage: ''
         },
         {
           centerText: '助人为乐',
           leftImage: '',
-          leftText: '中国矿业大学是教育部直属的全国重点高校，是教育部、应急管理部与江苏省人民政府共建高校，先后进入国家“211工程”“985优势学科创新平台项目”和国家“双一流”建设高校行列。',
+          leftText: 'E新向党实践团积极服务社会，致力于环境保护、扶贫助困等实践活动。将个人力量汇聚成社会进步的动力，广泛参与公共事务，不仅提升自我，更为社会发展贡献青春力量，助力社会和谐发展。',
           rightText: '',
-          rightImage: 'CUMT-view2.jpg'
+          rightImage: '枣园封面.png'
         },
         {
           centerText: '弘扬美德',
-          leftImage: 'CUMT-view3.jpg',
+          leftImage: '杨虎城旧址2.png',
           leftText: '',
-          rightText: '中国矿业大学是教育部直属的全国重点高校，是教育部、应急管理部与江苏省人民政府共建高校，先后进入国家“211工程”“985优势学科创新平台项目”和国家“双一流”建设高校行列。',
+          rightText: 'E新向党实践团大力弘扬中华传统美德，倡导诚信、友善和互助精神。通过宣传与实践，将美德内化为行动，号召更多人共同传承中华优秀文化，肩负青年的使命，推动美德在全社会生根发芽。',
           rightImage: ''
         },
       ]

@@ -12,7 +12,7 @@
 
     <div class="intro-text">
       <span>
-        这里放实践团介绍部分，可以放一整段。上面四张图片可以挑选有我们实践团人员的那种合照，然后下面的描述内容就是合照的事件背景
+        本团队已有六年之久的传承历史，在延安梁家河、开山岛、《新青年》创办、王杰精神、遵义会议等相关红色故事深入挖掘、普及宣讲的实践基础上。将团队各成员分组散布到枣庄、石家庄等全国十余个红色城市，重走红色足迹、追溯红色记忆、体悟红色文化，丰富个人思想底蕴、坚定自身革命信念。
       </span>
     </div>
   </div>
@@ -24,10 +24,10 @@ export default {
   data() {
     return {
       images: [
-        { src: "CUMT-view1.jpg", alt: "团队照片1", description: "实践团前往某地进行实践实践团前往某地进行实践" },
-        { src: "CUMT-view2.jpg", alt: "团队照片2", description: "实践团前往某地进行实践实践团前往某地进行实践" },
-        { src: "CUMT-view3.jpg", alt: "团队照片3", description: "实践团前往某地进行实践实践团前往某地进行实践实践团前往某地进行实践" },
-        { src: "CUMT-view4.jpg", alt: "团队照片4", description: "中实践团前往某地进行实践实践团前往某地进行实践实践团前往某地进行实践实践团前往某地进行实践" },
+        { src: "实践团介绍1.png", alt: "团队照片1", description: "渭华起义纪念地实践团成员学习相关运动经过" },
+        { src: "实践团介绍2.png", alt: "团队照片2", description: "七里河西津桥实践团成员拜访看望退伍老兵" },
+        { src: "实践团介绍3.png", alt: "团队照片3", description: "坞根镇实践团成员集体合影" },
+        { src: "实践团介绍4.png", alt: "团队照片4", description: "枣园实践团成员于纪念馆前领导人雕像合影" },
       ],
     };
   },
@@ -74,7 +74,7 @@ export default {
 
 .image-item p {
   margin-top: 2px;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   font-family: 楷体;
 }
@@ -89,7 +89,7 @@ export default {
     background-color: #f9f9f9;
     color: black;
     line-height: 1.6;
-    font-size: 18px;
+    font-size: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 </style>

@@ -1,24 +1,23 @@
 <template>
   <div>
-    <div class="heading">意见留言 这里的右边我打算放我们团队的logo 或者是计算机学院的logo</div>
+    <div class="heading">意见留言</div>
     <hr class="heading-hr" />
-    
-    <!-- 校徽图片部分 -->
-    <div class="badge-container">
-      <!-- 替换src为左侧校徽图片路径 -->
-      <img src="../assets/CUMT-logo.png" alt="左侧校徽" class="badge" />
-      <!-- 替换src为右侧校徽图片路径 -->
-      <img src="../assets/CUMT-logo.png" alt="右侧校徽" class="badge" />
-    </div>
 
+    <div class="tech-icons">
+      <img src="../assets/images/计院logo.png" alt="右侧校徽" class="icon square"/>
+      <img src="../assets/CUMT-logo.png" alt="左侧校徽" class="icon square" />
+      <img src="../assets/images/共青团logo.jpg" alt="右侧校徽" class="icon square"/>
+    </div>
+    
     <!-- 感谢信息部分 -->
     <div class="thank-you-container">
-      <p>· 感谢大家的使用 ·</p>
-      <p>· 感谢大家的观看 ·</p>
-      <p>· 感谢大家的使用感谢大家的观看感谢大家的观看感谢大家的观看感谢大家的观看 ·</p>
-      <p>· 感谢大家的观看感谢大家的观看感谢大家的观看 ·</p>
-      <p>· 感谢大家的使用感谢大家的观看感谢大家的观看感谢大家的观看感谢大家的观看 ·</p>
-      <p>· 感谢大家的使用感谢大家看感谢大家的观看感谢大家的观看 ·</p>
+      <p>· 大家好！这里是中国矿业大学——“E新向党”实践团！ ·</p>
+      <p>· 由衷地感谢大家访问本网站，了解实践团成员的成功展示！ ·</p>
+      <p>· 如果您对该网站有任何意见和建议，欢迎点击下方GitHub图标进行issue评论！ ·</p>
+      <p>· 需要说明的是，这个网站是实践团成员的共同成果！可以说缺少了哪一个部分，都不会搭建成功 ·</p>
+      <p>· 因此，请允许我向参与本次实践的各组成员表示衷心的感谢，同时也感谢带队老师，学生的实践付出！ ·</p>
+      <p>· 希望中国矿业大学的社会实践越做越好，越办越成功！ ·</p>
+      <p>· 平台开发组成员 陈岳豪 2024年9月6日 ·</p>
     </div>
 
     <!-- 圆形图片部分 -->
@@ -41,6 +40,25 @@ export default {
 </script>
 
 <style scoped>
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  gap: 15px; /* 图标之间的间距 */
+}
+
+.icon {
+  width: 100px; /* 设置图标的大小 */
+  height: 100px;
+}
+
+.square {
+  border-radius: 5px; /* 设定为正方形框 */
+  object-fit: contain; /* 确保图标按比例缩放并填充框 */
+}
+
 .heading {
   text-align: center;
   font-size: 30px;
@@ -56,20 +74,6 @@ export default {
   margin-bottom: 15px;
 }
 
-/* 校徽图片部分样式 */
-.badge-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto 20px;
-}
-
-.badge {
-  width: 45%; /* 设置校徽图片的宽度，确保它们是长条形的 */
-  height: auto;
-}
 
 /* 感谢信息部分样式 */
 .thank-you-container {

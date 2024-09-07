@@ -5,8 +5,8 @@
 
     <div class="practice">
       <div class="images">
-        <img src="@/assets/images/CUMT-view1.jpg" alt="Image 1" />
-        <img src="@/assets/images/CUMT-view4.jpg" alt="Image 2" />
+        <img src="@/assets/images/合照1.jpg" alt="Image 1" />
+        <img src="@/assets/images/本次实践1.jpg" alt="Image 2" />
       </div>
       <div class="stats">
         <div
@@ -14,9 +14,7 @@
   
         >
           <p>
-            这里就放本次实践的产生背景，以及所做的事，着重介绍本次的内容，左边的图片挑选两张最有代表性的图片即可，可以是合照等
-            下面的数字提示框可以放置一些统计数据，比如截至目前，前往多少地点实践，有多少人参加实践，累计攥写多少篇实践文稿，这种，统计数据，体现牛逼
-          
+            本次E新向党实践团的暑期社会实践任务在队长张铭昊和副队长杨晓迪的带领下，由曹露晨老师指导，形成了一个行政分工合理、办事高效的团队。团队共分为实地实践组、资料攥写组和平台开发组。实地实践组负责走访红色基地，亲身感悟红色文化的力量；资料攥写组负责将实践中收集到的资料进行整合与总结，撰写成具有传播价值的文稿；平台开发组则承担了线上平台的搭建工作，利用技术手段传播红色精神。通过各组的紧密配合，团队在实践参与人数、实践地点数量和文稿数量上取得了显著突破，成果也更加丰富。
           </p>
         </div>
         <div
@@ -38,9 +36,9 @@ export default {
   data() {
     return {
       stats: [
-        { description: '前往多少地点实践', end: 86, displayNumber: '???' },
-        { description: '有多少人参加实践', end: 50, displayNumber: '???' },
-        { description: '累计攥写多少篇实践文稿', end: 97, displayNumber: '???' }
+        { description: '累计实践人数突破', end: 85, displayNumber: '???' },
+        { description: '累计社会实践新闻产出高达', end: 20, displayNumber: '???' },
+        { description: '累计实地实践地点统计', end: 22, displayNumber: '???' }
       ]
     };
   },
