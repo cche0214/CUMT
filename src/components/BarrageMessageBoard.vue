@@ -62,15 +62,7 @@ export default {
             { text: '实地感受历史，更加深刻地理解过往。' },
             { text: '站在烈士纪念碑前，心中充满敬仰。' },
             { text: '战士们的英勇事迹，深深触动着我。' },
-            { text: '纪念馆里的每个展品，都承载着鲜活的记忆。' },
-            { text: '历史传承是责任，更是使命。' },
 
-            { text: '今日和平，是先烈们用鲜血换来的。' },
-            { text: '实地参观让我不再是旁观者，而是感受者。' },
-            { text: '历史的厚重感扑面而来，令人心生敬畏。' },
-            { text: '实践是走进历史的最好方式。' },  
-            { text: '传承红色基因，是我们的责任与担当。' },
-            { text: '革命精神，激励我们在新时代中砥砺前行。' },
 
           ],
       newtext: '',
@@ -140,7 +132,7 @@ export default {
 
 <style scoped>
 .background-section {
-  background-image: url('../assets/images/CUMT-view3.jpg');
+  background-image: url('../assets/images/九一八纪念馆2.png');
   background-size: cover;
   background-position: center;
 }
