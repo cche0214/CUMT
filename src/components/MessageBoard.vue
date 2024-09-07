@@ -5,7 +5,7 @@
 
     <div id="article-info">
     <!-- ... -->
-    阅读量: <span class="waline-pageview-count" data-path="https://cche0214.soooo.fun" />
+    阅读量: <span class="waline-pageview-count" data-path="/" />
     <!-- ... -->
     </div>
 
