@@ -136,42 +136,42 @@ export default {
     transition: transform 1s cubic-bezier(0.19,1,0.22,1);
 }
 .card:nth-child(1)::before {
-    background-image: url('https://img.pconline.com.cn/images/upload/upc/tx/photoblog/1311/21/c11/28860969_28860969_1385038801000_mthumb.jpg');
+    background-image: url('../assets/images/西安事变封面.jpg');
 }
 .card:nth-child(2)::before {
-    background-image: url('https://picx.zhimg.com/70/v2-b8df951ad056820a0cf4b3ea41141ff5_1440w.avis?source=172ae18b&biz_tag=Post');
+    background-image: url('../assets/images/淮海战役封面.jpg');
 }
 .card:nth-child(3)::before {
-    background-image: url('https://th.bing.com/th/id/R.966fc65a5a33b9bf70d92cafaf8389ab?rik=L1DvR5h9EJZXWw&riu=http%3a%2f%2fwww.169369.com%2fuploads%2fallimg%2f211227%2f2-21122G4520R48.jpg&ehk=xpHuYzY%2fEn20%2bh7OU%2fh825v5drKrF6YuQt32jpYxt%2bo%3d&risl=&pid=ImgRaw&r=0');
+    background-image: url('../assets/images/抗美援朝封面.png');
 }
 .card:nth-child(4)::before {
-    background-image: url('https://th.bing.com/th/id/OIP.84pIQyTazg2Zfp5uqV7HZQHaLb?rs=1&pid=ImgDetMain');
+    background-image: url('../assets/images/南昌起义封面.jpg');
 }
 .card:nth-child(5)::before {
-    background-image: url('https://th.bing.com/th/id/R.930eb7155bd0f2b7add6c1448b52ee3f?rik=%2f728LwwtUFFQvA&pid=ImgRaw&r=0');
+    background-image: url('../assets/images/平型关大捷封面.jpg');
 }
 .card:nth-child(6)::before {
-    background-image: url('https://th.bing.com/th/id/OIP.3Z3yq98niho1l6Bekmdk5wHaJY?rs=1&pid=ImgDetMain');
+    background-image: url('../assets/images/百团大战封面.jpg');
 }
 .card:nth-child(7)::before {
-    background-image: url('https://th.bing.com/th/id/OIP.IAKuejFPyMTqgNc3N4AaQQHaKO?rs=1&pid=ImgDetMain');
+    background-image: url('../assets/images/遵义会议封面.jpg');
 }
 
 
 .card:nth-child(8)::before {
-    background-image: url('https://th.bing.com/th/id/R.28db022943d1a74e09d7ec84dc950e08?rik=S9NndD6W%2fbNuiA&riu=http%3a%2f%2fi1.sinaimg.cn%2fjc%2f2015-11-26%2fU12794P27T1D844940F3DT20151126121301.jpg&ehk=HlfaD2iQB2ndex5XUoJjX2mu2y2sIBdwyjviIM7g0uE%3d&risl=&pid=ImgRaw&r=0');
+    background-image: url('../assets/images/重庆谈判封面.jpg');
 }
 .card:nth-child(9)::before {
-    background-image: url('https://th.bing.com/th/id/OIP.3-OcfWSpvxrD16PfOr6YEQHaFE?rs=1&pid=ImgDetMain');
+    background-image: url('../assets/images/渡江战役封面.jpg');
 }
 .card:nth-child(10)::before {
-    background-image: url('https://th.bing.com/th/id/R.9bf1d9819de1ddcc1fbc5656982a6879?rik=iGQkaFUtPQqA%2fw&pid=ImgRaw&r=0');
+    background-image: url('../assets/images/井冈山精神封面.jpg');
 }
 .card:nth-child(11)::before {
-    background-image: url('https://th.bing.com/th/id/OIP.ey52sgOXJ1whoGzXlyE_JgHaKY?rs=1&pid=ImgDetMain');
+    background-image: url('../assets/images/四渡赤水封面.jpg');
 }
 .card:nth-child(12)::before {
-    background-image: url('https://th.bing.com/th/id/OIP.FZ-egX4_zDHslApU825ttwAAAA?rs=1&pid=ImgDetMain');
+    background-image: url('../assets/images/上甘岭战役封面.jpg');
 }
 
 .card::after {
