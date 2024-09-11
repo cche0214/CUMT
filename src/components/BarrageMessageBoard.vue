@@ -87,7 +87,7 @@ export default {
      * @return void
      */
     fetchComments() {
-      const url = 'https://comments.soooo.fun/api/comment?path=/&pageSize=10&page=1&lang=zh-CN&sortBy=insertedAt_desc';
+      const url = 'https://comments.soooo.fun/api/comment?path=/&pageSize=20&page=1&lang=zh-CN&sortBy=insertedAt_desc';
       axios.get(url)
         .then(response => {
           const data = response.data.data.data;

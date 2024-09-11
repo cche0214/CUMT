@@ -10,7 +10,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
-    "@fortawesome/vue-fontawesome": "^3.0.8",
+    "@fortawesome/vue-fontawesome": "^2.0.0",
     "@mdi/font": "^7.4.47",
     "core-js": "^3.8.3",
     "echarts": "^5.5.1",
@@ -20,7 +20,8 @@
     "lodash": "^4.17.21",
     "vue": "^2.6.14",
     "vue-danmaku": "^1.7.2",
-    "vue-router": "3.6.5"
+    "vue-router": "3.6.5",
+    "axios": "^0.21.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -53,5 +54,6 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }
