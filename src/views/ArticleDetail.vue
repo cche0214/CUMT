@@ -11,7 +11,7 @@
       <div class="content" v-if="Number(DetailTemple)">
         <h1 class="heading">{{cardListStory[DetailId-1].title}}</h1>
         <hr class="heading-hr">
-        <p class="info">发布者：E新向党实践团 发布时间：2024-7-28 当前位置：红色故事</p>
+        <p class="info">发布者：E新向党实践团 发布时间：2024-7-28 当前位置：红色故事 素材来源网络 侵权联系删除</p>
         
         
         <!-- 内容部分 -->
@@ -39,7 +39,7 @@
         </div>
 
         <!-- 结尾部分 -->
-        <!-- <p class="form">新闻来源：{{cardListStory[DetailId-1].source}}&nbsp;摄影：{{cardListStory[DetailId-1].photographer}}&nbsp;责任编辑：{{cardListStory[DetailId-1].editor}}&nbsp;审核:{{cardListStory[DetailId-1].reviewer}}</p> -->
+        <!-- <p class="form">封面图片来源网络</p> -->
       
 
         <button class="btn" @click="goBack()">返回</button>

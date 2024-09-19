@@ -2,7 +2,7 @@
   <div class="body">
       <div class="container">
         <CardComponent></CardComponent>
-        <CardComponentus></CardComponentus>
+        <!-- <CardComponentus></CardComponentus> -->
         <AboutWeb></AboutWeb>
       </div>
     </div>
@@ -10,11 +10,11 @@
 
 <script>
 import CardComponent from '@/components/CardComponent.vue';
-import CardComponentus from '@/components/CardComponentus.vue';
+/* import CardComponentus from '@/components/CardComponentus.vue'; */
 import AboutWeb from '@/components/AboutWeb.vue';
 export default {
   components:{
-    CardComponent,AboutWeb,CardComponentus
+    CardComponent,AboutWeb,/* CardComponentus */
   }
 }
 </script>
